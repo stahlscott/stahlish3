@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
                 </a>
                 <h2
                   className="title is-size-3 has-text-weight-bold is-bold-light"
-                  style={{ alignSelf: 'center', marginLeft: 30 }}
+                  style={{ alignSelf: 'center', marginLeft: 30, marginTop: 20 }}
                 >
                   {title}
                 </h2>
