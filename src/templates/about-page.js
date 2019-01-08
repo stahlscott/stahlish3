@@ -13,16 +13,18 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              {image ? (
-                [
-                  <a href="https://github.com/stahlscott" target="_blank" rel="noopener noreferrer">
-                    <Avatar imageInfo={image} />
-                  </a>,
-                  <br />,
-                ]
-              ) : (
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{title}</h2>
-              )}
+              <div className="columns">
+                <a href="https://github.com/stahlscott" target="_blank" rel="noopener noreferrer">
+                  <Avatar imageInfo={image} />
+                </a>
+                <h2
+                  className="title is-size-3 has-text-weight-bold is-bold-light"
+                  style={{ alignSelf: 'center', marginLeft: 30 }}
+                >
+                  {title}
+                </h2>
+              </div>
+              <br />
               <PageContent className="content" content={content} />
             </div>
           </div>

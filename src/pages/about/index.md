@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: About me
+title: Scott Stahl
 image: /img/coffeeshopsquare.png
 ---
 

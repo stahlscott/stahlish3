@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
 const Avatar = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: '20px', width: '100px' };
+  const imageStyle = { borderRadius: '20px', width: '80px' };
   const { alt = '', childImageSharp, image } = imageInfo;
 
   if (!!image && !!image.childImageSharp) {
