@@ -1,71 +1,81 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Content, { HTMLContent } from '../components/Content';
+import Avatar from '../components/Avatar';
 
-export default class IndexPage extends React.Component {
-  render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
-
-    return (
-      <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Posts</h1>
-            </div>
-            {posts.map(({ node: post }) => (
-              <div className="content" style={{ border: '1px solid #333', padding: '2em 4em' }} key={post.id}>
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+export const HomePageTemplate = ({ title, image, content, contentComponent }) => {
+  const PageContent = contentComponent || Content;
+  return (
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section">
+              <div className="columns">
+                <a href="https://github.com/stahlscott" target="_blank" rel="noopener noreferrer">
+                  <Avatar imageInfo={image} />
+                </a>
+                <h2
+                  className="title is-size-3 has-text-weight-bold is-bold-light"
+                  style={{ alignSelf: 'center', marginLeft: 30, marginTop: 20 }}
+                >
+                  {title}
+                </h2>
               </div>
-            ))}
+              <br />
+              <PageContent className="content" content={content} />
+            </div>
           </div>
-        </section>
-      </Layout>
-    );
-  }
-}
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
+        </div>
+      </div>
+    </section>
+  );
 };
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-    ) {
+HomePageTemplate.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+};
+
+const HomePage = ({ data }) => {
+  const { node: post } = data.allMarkdownRemark.edges[0];
+  return (
+    <Layout>
+      <HomePageTemplate
+        contentComponent={HTMLContent}
+        title={post.frontmatter.title}
+        image={post.frontmatter.image}
+        content={post.html}
+      />
+    </Layout>
+  );
+};
+
+HomePage.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export default HomePage;
+
+export const homePageQuery = graphql`
+  query HomePage {
+    allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "about-page" } } }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
+          html
           frontmatter {
             title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

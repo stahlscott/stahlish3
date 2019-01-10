@@ -5,7 +5,6 @@ import github from '../img/github-icon.svg';
 import twitter from '../img/twitter-icon.svg';
 import email from '../img/email-icon.svg';
 import linkedin from '../img/linkedin-icon.svg';
-import logo from '../img/lumberjack.png';
 
 const Navbar = class extends React.Component {
   componentDidMount() {
@@ -33,9 +32,6 @@ const Navbar = class extends React.Component {
       <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="">
-              <img src={logo} alt=" " />
-            </Link>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">
               <span />
@@ -45,10 +41,13 @@ const Navbar = class extends React.Component {
           </div>
           <div id="navMenu" className="navbar-menu">
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about" style={{ marginBottom: 20 }}>
+              <Link className="navbar-item" to="/" style={{ marginBottom: 30 }}>
+                Home
+              </Link>
+              <Link className="navbar-item" to="/about" style={{ marginBottom: 30 }}>
                 About
               </Link>
-              <Link className="navbar-item" to="/posts" style={{ marginBottom: 20 }}>
+              <Link className="navbar-item" to="/posts" style={{ marginBottom: 30 }}>
                 Posts
               </Link>
             </div>
