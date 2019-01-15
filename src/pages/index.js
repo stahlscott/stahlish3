@@ -61,6 +61,8 @@ HomePage.propTypes = {
 
 export default HomePage;
 
+/* http://localhost:8000/___graphql */
+
 export const homePageQuery = graphql`
   query HomePage {
     allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "about-page" } } }) {
