@@ -65,7 +65,7 @@ export default HomePage;
 
 export const homePageQuery = graphql`
   query HomePage {
-    allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "about-page" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { home: { eq: true } } }) {
       edges {
         node {
           html

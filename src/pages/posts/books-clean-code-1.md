@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-title: "Books: Clean Code, Chapters 1-4"
+title: 'Books: Clean Code, Chapters 1-4'
 date: 2018-01-14
-tags: ["books", "clean code"]
+tags: ['books', 'clean code']
 draft: false
 ---
 
@@ -14,7 +14,7 @@ After borrowing [Doug Morgan](https://www.twitter.com/dougmorganCLE)'s copy of C
 
 ### Chapter 1: Clean Code
 
-> "[Managers] may defend the schedule and requirements with passion; but that's their job. It's *your* job to defend the code with equal passion."
+> "[Managers] may defend the schedule and requirements with passion; but that's their job. It's _your_ job to defend the code with equal passion."
 
 Of course, this is not to say that we can take 6 months to write each story. Startups and agile teams must move quickly, but it's important not to create long-term problems in the name of short-term gains.
 
@@ -40,11 +40,11 @@ Don't be smart when you can be clear. This goes for writing cute, complex list c
 
 ### Chapter 3: Functions
 
-> The first rule of functions is that they should be small. The second rule of functions is that *they should be smaller than that*.
+> The first rule of functions is that they should be small. The second rule of functions is that _they should be smaller than that_.
 
-* Blocks within `if` statements should be one line
-* Ideally a function call
-* Functions should have no more than 1 or 2 indent levels
+- Blocks within `if` statements should be one line
+- Ideally a function call
+- Functions should have no more than 1 or 2 indent levels
 
 Switch statements are inherently dirty for several reasons but sometimes unavoidable, so it's best to bury them in the basement of an abstract factory.
 

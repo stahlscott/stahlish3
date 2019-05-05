@@ -48,7 +48,7 @@ const Navbar = class extends React.Component {
                 About
               </Link>
               <Link className="navbar-item" to="/posts" style={{ marginBottom: 30 }}>
-                Posts
+                Writing
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
