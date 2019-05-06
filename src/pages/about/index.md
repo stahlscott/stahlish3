@@ -4,7 +4,7 @@ title: Hi there
 image: /img/wave.png
 ---
 
-I am a full-stack software engineer & web developer. Here's how I got here.
+I am a full-stack software engineer & web developer. I wasn't always. Here's how I got here.
 
 ### Skiplist
 

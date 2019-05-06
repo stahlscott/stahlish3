@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-title: "Books: Clean Code, Chapters 9-12"
+title: 'Books: Clean Code, Chapters 9-12'
 date: 2018-01-21
-tags: 
+tags:
   - books
   - clean code
 published: true
@@ -27,6 +27,7 @@ I agree with this:
 > Readability is perhaps even more important in unit tests than it is in production code.
 
 Very important to follow an explicit, clean, readable pattern, without any shortcuts. Following Arrange/Act/Assert (or Build/Operate/Check, both of which are implementations of Given/When/Then) pattern:
+
 1. Arrange: stage data & set expected result variables
 2. Act: execute the production code we're testing
 3. Assert: run your assertions (Hamcrest++) against your expectations
@@ -41,11 +42,11 @@ They recommend this over "one assert per function" which I agree with. Sometimes
 
 Summary concept: **F.I.R.S.T**
 
-* **Fast** Tests should run quickly. This translates to following the test pyramid framework of a large number of unit tests, smaller number of integration, even smaller number of acceptance.
-* **Independent** Test should not depend on each other; they should be able to run in any random order and pass.
-* **Repeatable** Tests should be able to run in any environment with the same results.
-* **Self-Validating** Tests should either pass or fail, not output to a log and require manual checking.
-* **Timely** The tests should be written just before the production code that makes them pass
+- **Fast** Tests should run quickly. This translates to following the test pyramid framework of a large number of unit tests, smaller number of integration, even smaller number of acceptance.
+- **Independent** Test should not depend on each other; they should be able to run in any random order and pass.
+- **Repeatable** Tests should be able to run in any environment with the same results.
+- **Self-Validating** Tests should either pass or fail, not output to a log and require manual checking.
+- **Timely** The tests should be written just before the production code that makes them pass
 
 > If you let your tests rot, then your code will rot too.
 
@@ -61,7 +62,7 @@ Boils down to Single Responsibility Principle.
 
 > Getting software to work and making software clean are two very different activites.
 
-We need to get away from the idea that clean code even *can* be written from the start. We will meander around and come up with six different ways of solving the problem first. Once it works, then we find a way to make it pretty. Writing a book is a different skill than editing/proofreading one.
+We need to get away from the idea that clean code even _can_ be written from the start. We will meander around and come up with six different ways of solving the problem first. Once it works, then we find a way to make it pretty. Writing a book is a different skill than editing/proofreading one.
 
 Eliminate ever changing parameter lists by promoting variables to class level; if several methods share the same variables that are never used by other methods, good sign you have a class that can be extracted.
 
@@ -92,7 +93,7 @@ First do step 1, then steps 2-4 until satisfied.
 
 Side note: I'd love to see more examples comprised of real world objects/concepts instead of abstract math stuff.
 
-*EXPRESSIVE* is going to be my keyword for 2018. Make the code obvious, easy to read. Like a YA novel.
+_EXPRESSIVE_ is going to be my keyword for 2018. Make the code obvious, easy to read. Like a YA novel.
 
 > Well-written unit tests are expressive. A primary goal of tests is to document by example.
 

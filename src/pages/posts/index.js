@@ -7,7 +7,7 @@ export default class PostsPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-
+    console.log(posts);
     return (
       <Layout>
         <section className="section">
@@ -15,7 +15,9 @@ export default class PostsPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Posts</h1>
             </div>
-            {posts.map(({ node: post }) => this.renderBlurb(post))}
+            {posts
+              .filter(({ node: post }) => post.frontmatter.published)
+              .map(({ node: post }) => this.renderBlurb(post))}
           </div>
         </section>
       </Layout>
@@ -70,6 +72,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            published
           }
         }
       }
