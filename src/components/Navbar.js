@@ -7,6 +7,34 @@ import twitter from '../img/twitter-icon.svg';
 import email from '../img/email-icon.svg';
 import linkedin from '../img/linkedin-icon.svg';
 
+const NAVBAR_ICONS = [
+  {
+    link: 'https://github.com/stahlscott',
+    icon: github,
+    alt: 'Github',
+  },
+  {
+    link: 'https://twitter.com/stahlish',
+    icon: twitter,
+    alt: 'Twitter',
+  },
+  {
+    link: 'https://dev.to/stahlish',
+    icon: dev,
+    alt: 'DEV.to',
+  },
+  {
+    link: 'https://www.linkedin.com/in/stahlscott/',
+    icon: linkedin,
+    alt: 'LinkedIn',
+  },
+  {
+    link: 'mailto:stahl.scott@gmail.com',
+    icon: email,
+    alt: 'Email',
+  },
+];
+
 const Navbar = class extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
@@ -53,36 +81,13 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a className="navbar-item" href="https://github.com/stahlscott" target="_blank" rel="noopener noreferrer">
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-              <a className="navbar-item" href="https://twitter.com/stahlish" target="_blank" rel="noopener noreferrer">
-                <span className="icon">
-                  <img src={twitter} alt="Twitter" />
-                </span>
-              </a>
-              <a className="navbar-item" href="https://dev.to/stahlish" target="_blank" rel="noopener noreferrer">
-                <span className="icon">
-                  <img src={dev} alt="DEV.to" />
-                </span>
-              </a>
-              <a className="navbar-item" href="mailto:stahl.scott@gmail.com" target="_blank" rel="noopener noreferrer">
-                <span className="icon">
-                  <img src={email} alt="Email" />
-                </span>
-              </a>
-              <a
-                className="navbar-item"
-                href="https://www.linkedin.com/in/stahlscott/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={linkedin} alt="LinkedIn" />
-                </span>
-              </a>
+              {NAVBAR_ICONS.map(item => (
+                <a className="navbar-item" href={item.link} target="_blank" rel="noopener noreferrer">
+                  <span className="icon">
+                    <img src={item.icon} alt={item.alt} />
+                  </span>
+                </a>
+              ))}
             </div>
           </div>
         </div>
