@@ -80,19 +80,21 @@ const Navbar = class extends React.Component {
                 Writing
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
-              {NAVBAR_ICONS.map(item => (
-                <a className="navbar-item" href={item.link} target="_blank" rel="noopener noreferrer">
-                  <span className="icon">
-                    <img src={item.icon} alt={item.alt} />
-                  </span>
-                </a>
-              ))}
-            </div>
+            <div className="navbar-end has-text-centered">{this.renderIcons()}</div>
           </div>
         </div>
       </nav>
     );
+  }
+
+  renderIcons() {
+    return NAVBAR_ICONS.map((item, index) => (
+      <a key={index} className="navbar-item" href={item.link} target="_blank" rel="noopener noreferrer">
+        <span className="icon">
+          <img src={item.icon} alt={item.alt} />
+        </span>
+      </a>
+    ));
   }
 };
 
