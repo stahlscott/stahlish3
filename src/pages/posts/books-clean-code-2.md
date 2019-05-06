@@ -4,7 +4,7 @@ title: 'Books: Clean Code, Chapters 5-8'
 date: 2018-01-15
 tags:
   - books
-  - clean code
+  - clean-code
 published: true
 ---
 

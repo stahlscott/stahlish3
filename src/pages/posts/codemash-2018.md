@@ -2,9 +2,10 @@
 templateKey: blog-post
 title: 'CodeMash 2018 retrospective'
 date: 2018-01-13T09:08:11-05:00
-draft: false
+tags:
+  - conference
+  - react
 published: true
-tags: ['conference', 'react']
 ---
 
 ## What is CodeMash?

@@ -2,8 +2,10 @@
 templateKey: blog-post
 title: 'Books: Clean Code, Chapters 1-4'
 date: 2018-01-14
-tags: ['books', 'clean code']
-draft: false
+tags:
+  - books
+  - clean-code
+published: true
 ---
 
 ## Clean Code
