@@ -73,10 +73,10 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/" style={{ marginBottom: 30 }}>
                 Home
               </Link>
-              <Link className="navbar-item" to="/about" style={{ marginBottom: 30 }}>
+              <Link className="navbar-item" to="/about/" style={{ marginBottom: 30 }}>
                 About
               </Link>
-              <Link className="navbar-item" to="/posts" style={{ marginBottom: 30 }}>
+              <Link className="navbar-item" to="/posts/" style={{ marginBottom: 30 }}>
                 Writing
               </Link>
             </div>
