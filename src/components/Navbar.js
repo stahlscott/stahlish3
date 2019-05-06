@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import dev from '../img/dev-badge.svg';
 import github from '../img/github-icon.svg';
 import twitter from '../img/twitter-icon.svg';
 import email from '../img/email-icon.svg';
@@ -60,6 +61,11 @@ const Navbar = class extends React.Component {
               <a className="navbar-item" href="https://twitter.com/stahlish" target="_blank" rel="noopener noreferrer">
                 <span className="icon">
                   <img src={twitter} alt="Twitter" />
+                </span>
+              </a>
+              <a className="navbar-item" href="https://dev.to/stahlish" target="_blank" rel="noopener noreferrer">
+                <span className="icon">
+                  <img src={dev} alt="DEV.to" />
                 </span>
               </a>
               <a className="navbar-item" href="mailto:stahl.scott@gmail.com" target="_blank" rel="noopener noreferrer">
