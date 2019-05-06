@@ -28,9 +28,7 @@ export default class PostsPage extends React.Component {
     return (
       <div className="content" style={{ border: '1px solid #333', padding: '2em 4em' }} key={post.id}>
         <p>
-          <Link className="has-text-primary" to={post.fields.slug}>
-            {post.frontmatter.title}
-          </Link>
+          <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
           <span> &bull; </span>
           <small>{post.frontmatter.date}</small>
         </p>

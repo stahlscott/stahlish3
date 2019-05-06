@@ -24,9 +24,7 @@ export const BlogPostTemplate = ({ content, contentComponent, description, tags,
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
-                      <Link class="has-text-primary" to={`/tags/${kebabCase(tag)}/`}>
-                        {tag}
-                      </Link>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
                   ))}
                 </ul>
