@@ -11,3 +11,7 @@ Full-stack software engineer & web developer.
 - Learning is better than knowing.
 - Done is better than perfect.
 - Simple is better than complex.
+
+I've been lucky enough to work professionally with Python, ReactJS, React-Native, Node, Docker, SQL, and Mongo, among many others.
+
+I'd love to connect and learn and work with new people. Contact me via any of the social links above.

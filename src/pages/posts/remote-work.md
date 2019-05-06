@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Working remote: one year on'
+description: 'Lessons learned from a year of hacking at home.'
 date: 2019-05-06
 tags:
   - conference

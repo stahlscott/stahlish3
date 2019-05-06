@@ -33,7 +33,7 @@ export default class PostsPage extends React.Component {
           <small>{post.frontmatter.date}</small>
         </p>
         <p>
-          {post.excerpt}
+          {post.frontmatter.description ? post.frontmatter.description : post.excerpt}
           <br />
           <br />
           <Link className="button is-small" to={post.fields.slug}>
@@ -71,6 +71,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             published
+            description
           }
         }
       }
