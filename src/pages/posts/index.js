@@ -7,7 +7,7 @@ export default class PostsPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-    console.log(posts);
+
     return (
       <Layout>
         <section className="section">
