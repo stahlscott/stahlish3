@@ -26,4 +26,4 @@ Directed daily and long-term strategy for company operations and IT. Supervised 
 
 ### Education
 
-I attained a B.S. in Wood Products Engineering from SUNY ESF at Syracuse and graduated from the Software Guild bootcamp in Akron, OH when I switched from lumber to writing code. And a fun fact since you read this far, I also co-owned and operated a hot sauce business from 2012 to 2015.
+I attained a B.S. in Wood Products Engineering from SUNY ESF at Syracuse and graduated from the Software Guild bootcamp in Akron, OH when I switched from lumber to writing code. And a fun fact since you read this far, I co-owned and operated a hot sauce business from 2012 to 2015. Ask me about it to unlock bonus points.
