@@ -1,12 +1,12 @@
 ---
 templateKey: blog-post
-title: 'AOL proggiez circa 1997'
-description: ''
-date: 2019-05-06
+title: 'Learning programming through hacking AOL'
+description: 'A journey through hazy middle school memories of discovering the joy of code.'
+date: 2019-05-07
 tags:
   - aol
   - visual-basic
-published: false
+published: true
 ---
 
 My first taste of programming came in middle school. Middle school for me coincided with the mid-90s, which were a bizarre time. _Hackers_ was released in 1995, and was a land of unimaginable coolness to us suburban, basement-dwelling, NES-obsessed weirdos. _The Net_ was also recently released, and Sandra Bullock was hacking herself some free pizzas. People were prefixing "cyber" in front of everything, and it actually seemed cool. (My first email address was _cyberspartacus_, referencing the aforementioned coolness of _cyber-_ mixed with a joke from _The Critic_ about Spartacus that I didn't really understand.) I learned from the pop culture of the day that floppy disks were a portable currency, and I imagined carrying around a set of programs in my pocket like a swiss army knife. _The Matrix_ and the actual coolness it would bring to the internet were an eternity away in 1999.
@@ -19,7 +19,9 @@ Once I stumbled upon this subculture, I became obsessed. I downloaded every prog
 
 Visual Basic 3.0 Enterprise seemed to be constantly available on warez sites, so I figured I'd give it a shot. I wanted to build badly enough that having no idea how to write code was not going to stop me. Like all warez, it came in 30-40 sequential RAR files that unzipped into a single install with a registration crack. I found myself a library of basic proggie functions that other people had written and distributed. All I had to do was deconstruct this bizarre language and figure out how to make things work. I spent hours every day during that summer of (I think 1998, maybe 1997) decrypting VB, figuring out how it worked, and translating it into building my own prog. I was designing my perfect UI, I was implementing & tweaking functions from the `.bas` library; I was building a prog of my own. I even put several encrypted passwords on it for higher access functions. Of course, no one but me ever used this application, but I was damn sure to build in 5 levels of security and ensured that I was the only one who would ever get full admin access. I was the admin of my own prog, and I would punt people with (some of) my own code, and I felt invulnerable. Did I almost get my family banned from AOL for life? Sure, several times. Did I end up talking my way out of it every time? Also yes.
 
-All the learning I would do on this journey would fundamentally set me on the course I ended up on later in life. With the right tools and access, I skated just above the line of getting in real trouble while learning what real computer programming was like. I'm still doing the same thing today as I did with those VB building blocks: start with something someone smarter than me built, reverse-engineer it until I understand it, and go off on my own. I'm forever thankful for the access and freedom I had in those days.
+All the learning I would do on this journey would set me on the course I ended up on later in life. With the right tools and access, I skated just above the line of getting in real trouble while learning what real computer programming was like. Fundamentally, I'm still doing the same thing today as I did with those VB building blocks: start with something someone smarter than me built, reverse-engineer it until I understand it, and go off on my own. I'm forever thankful for the access and freedom I had in those days.
+
+---
 
 Major shoutout to [this post by digital](http://www.digital5k.com/aol-progz-a-digital-throw-back-to-aol-1995/), the best reminiscence I've found of the progz scene. Be sure to check some of the links at the bottom, especially...
 
