@@ -18,7 +18,7 @@ export const HomePageTemplate = ({ title, image, content, contentComponent }) =>
                   <Avatar imageInfo={image} />
                 </a>
                 <h2
-                  className="title is-size-3 has-text-weight-bold is-bold-light"
+                  className="title is-size-3 has-text-weight-bold is-bold-light has-text-primary"
                   style={{ alignSelf: 'center', marginLeft: 30, marginTop: 20 }}
                 >
                   {title}
