@@ -2,14 +2,14 @@
 templateKey: blog-post
 title: 'Learning programming through hacking AOL'
 description: 'A journey through hazy middle school memories of discovering the joy of code.'
-date: 2019-05-07
+date: 2019-05-08
 tags:
   - aol
   - visual-basic
 published: true
 ---
 
-My first taste of programming came in middle school. Middle school for me coincided with the mid-90s, which were a bizarre time. _Hackers_ was released in 1995, and was a land of unimaginable coolness to us suburban, basement-dwelling, NES-obsessed weirdos. _The Net_ was also recently released, and Sandra Bullock was hacking herself some free pizzas. People were prefixing "cyber" in front of everything, and it actually seemed cool. I learned from the pop culture of the day that floppy disks were a portable currency, and I imagined carrying around a set of programs in my pocket like a swiss army knife. _The Matrix_ and the actual coolness it would bring to the internet were an eternity away in 1999.
+My first taste of programming came in middle school. Middle school for me coincided with the mid-90s, which were a bizarre time. _Hackers_ was released in 1995, and was a land of [unimaginable techno coolness](https://www.youtube.com/watch?v=bcAACOrgVKE) to us suburban, basement-dwelling, NES-obsessed weirdos. _The Net_ was also recently released, and Sandra Bullock was playing Wolfenstein 3D and [outhacking her pursuers](https://www.youtube.com/watch?v=CHd7Z0CITP0). People were prefixing "cyber" in front of everything, and it actually seemed cool. I learned from the pop culture of the day that floppy disks were a portable currency, and I imagined carrying around a set of programs in my pocket like a swiss army knife. _The Matrix_ and the actual coolness it would bring to the internet were an eternity away in 1999.
 
 I had cajoled and convinced my parents to get a PC by ~1996, and we had that dangerous entrance to the internet known as AOL by ~1997. Now I had access to the world, and I imagined myself a Kevin Mitnick or a Zer0 C0ol. Of course I didn't know the first thing about what I was actually doing, but I had drive and a mischievous intuition. I quickly found my way into various chat rooms, which led to deeper chat rooms, which showed people passing around pirated programs, known as _warez_, which I had always pronounced like Juarez but I'm pretty sure in hindsight was probably like a merchant's _wares_ but with a z for cool factor. And in this scene, you were surrounded by magical little Windows applications known as proggiez or progz.
 
@@ -25,10 +25,14 @@ All the learning I would do on this journey would set me on the course I ended u
 
 ---
 
-Major shoutout to [this post by digital](http://www.digital5k.com/aol-progz-a-digital-throw-back-to-aol-1995/), the best reminiscence I've found of the progz scene and an inspiration to his post. Be sure to check some of the links at the bottom, especially...
+Major shoutouts:
 
-[This one, which is an awesome](http://justinakapaste.com) info dump of screenshots and information from that era.
+To [this post by digital](http://www.digital5k.com/aol-progz-a-digital-throw-back-to-aol-1995/), the best reminiscence I've found of the progz scene and an inspiration to his post.
 
-[This list of progz](http://www.angelfire.com/ky/peschel/punters.html) is the closest thing I've found to a full list. Download at your own risk, though I'm doubtful any of the links even work. The names are definitely all real.)
+To [this info dump](http://justinakapaste.com) of screenshots and information from that era.
 
-On the technical side, [this post](http://charlesleifer.com/blog/a-stroll-down-memory-lane-scripting-aol/) talks details about writing progz in Visual Basic. Seeing that old VB code and UI is bracing.
+To [this list of progz](http://www.angelfire.com/ky/peschel/punters.html), the closest thing I've found to a full list. Download at your own risk, though I'm doubtful any of the links even work. The names are definitely all real.
+
+To [this technical walkthrough](http://charlesleifer.com/blog/a-stroll-down-memory-lane-scripting-aol/) detailing writing progz in Visual Basic 3.0. Seeing that old VB code and UI is bracing.
+
+I recommend using [archive.org](https://web.archive.org/) to investigate broken links from the above.
