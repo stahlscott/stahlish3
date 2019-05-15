@@ -8,7 +8,7 @@ I am a full-stack software engineer & web developer. I wasn't always. Here's how
 
 ### Skiplist, Software Developer // Cleveland OH, Full-time Remote
 
-`may 2018 => present`
+`05/2018 => present`
 
 - Contracting/consulting, writing web & mobile applications.
 - Developing in React, React-Native, Node, Python, Mongo, & more.
@@ -17,14 +17,14 @@ I am a full-stack software engineer & web developer. I wasn't always. Here's how
 
 ### OnShift, Software Developer // Cleveland OH
 
-`june 2016 => may 2018`
+`06/2016 => 05/2018`
 
 - Member of the core scheduling product team.
 - Modernized an older Python codebase through new features, improved UI, automated testing, new tooling, & constant refactoring.
 
 ### Rochester Lumber Company, Vice President, Operations // Rochester, NY
 
-`october 2009 => february 2016`
+`10/2009 => 02/2016`
 
 - Directed daily and long-term strategy for company operations & IT.
 - Supervised 4 branch managers toward goals of improved performance, profitability, & better team communication.
