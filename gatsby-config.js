@@ -107,16 +107,22 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { order: DESC, fields: [frontmatter___date] }
+                  filter: { frontmatter: { templateKey: { eq: "blog-post" }, published: { eq: true } } }
                 ) {
                   edges {
                     node {
-                      excerpt
-                      html
-                      fields { slug }
+                      excerpt(pruneLength: 400)
+                      id
+                      fields {
+                        slug
+                      }
                       frontmatter {
                         title
-                        date
+                        templateKey
+                        date(formatString: "MMMM DD, YYYY")
+                        published
+                        description
                       }
                     }
                   }

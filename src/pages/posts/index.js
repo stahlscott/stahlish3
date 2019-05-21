@@ -15,9 +15,7 @@ export default class PostsPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Posts</h1>
             </div>
-            {posts
-              .filter(({ node: post }) => post.frontmatter.published)
-              .map(({ node: post }) => this.renderBlurb(post))}
+            {posts.map(({ node: post }) => this.renderBlurb(post))}
           </div>
         </section>
       </Layout>
@@ -57,7 +55,7 @@ export const pageQuery = graphql`
   query PostsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" }, published: { eq: true } } }
     ) {
       edges {
         node {
