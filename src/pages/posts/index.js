@@ -18,7 +18,7 @@ export default class PostsPage extends React.Component {
               <h1 className="has-text-weight-bold is-size-2">
                 Posts
                 {posts && (
-                  <span style={{ marginLeft: 20 }}>
+                  <span className="icon" style={{ marginLeft: 20 }}>
                     <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon className="fa-xs" icon={faRss} />
                     </a>
