@@ -35,7 +35,12 @@ export default class PostsPage extends React.Component {
     return (
       <div
         className="content"
-        style={{ borderBottom: '1px solid #ccc', borderRight: '1px solid #888', padding: '2em 4em' }}
+        style={{
+          border: '1px solid transparent',
+          borderImage: 'linear-gradient(to right, #eee, #bbb) 100',
+          borderImageSlice: 1,
+          padding: '2em 4em',
+        }}
         key={post.id}
       >
         <p>
