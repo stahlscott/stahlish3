@@ -130,8 +130,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Your Site's RSS Feed",
-            match: '^/posts/',
+            title: 'stahlish.com posts - rss feed',
           },
         ],
       },

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import Layout from '../../components/Layout';
+import { faRss } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class PostsPage extends React.Component {
   render() {
@@ -13,7 +15,14 @@ export default class PostsPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Posts</h1>
+              <h1 className="has-text-weight-bold is-size-2">
+                Posts
+                <span style={{ marginLeft: 20 }}>
+                  <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon className="fa-xs" icon={faRss} />
+                  </a>
+                </span>
+              </h1>
             </div>
             {posts.map(({ node: post }) => this.renderBlurb(post))}
           </div>
@@ -24,7 +33,11 @@ export default class PostsPage extends React.Component {
 
   renderBlurb(post) {
     return (
-      <div className="content" style={{ border: '1px solid #333', padding: '2em 4em' }} key={post.id}>
+      <div
+        className="content"
+        style={{ borderBottom: '1px solid #ccc', borderRight: '1px solid #888', padding: '2em 4em' }}
+        key={post.id}
+      >
         <p>
           <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
           <span> &bull; </span>
