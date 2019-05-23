@@ -8,8 +8,7 @@ image: /img/coffeeshopsquare.png
 Full-stack software engineer & web developer.
 
 - Teams are better than individuals.
-- Learning is better than knowing.
-- Done is better than perfect.
+- Asking is better than assuming.
 - Simple is better than complex.
 
 I've been lucky enough to work professionally with Python, ReactJS, React-Native, Node, Docker, SQL, and Mongo, among many others.
