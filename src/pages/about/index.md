@@ -12,8 +12,10 @@ I am a full-stack software engineer & web developer. I wasn't always. Here's how
 
 - Contracting/consulting, writing web & mobile applications.
 - Developing in React, React-Native, Node, Python, Mongo, & more.
-- Interacting directly with customers to build to their needs, from 4-week greenfield mobile projects to 1-2 year modernization rewrites.
+- Interacting directly with customers to build to their needs, from 4-week greenfield mobile projects to 1-2 year app modernization rewrites.
 - Building an engineering culture founded on democratic principles.
+
+At Skiplist, we have a fantastic software team dedicated to delivering thoughtful solutions to our clients. I've had the opportunity to put my dev skills to the test, learning how to build apps from the ground up on teams of 0-3 other devs. I've also been able to work on defining processes for a growing company, including building out the interview process and building out a process for the engineering department to self-organize.
 
 ### OnShift, Software Developer // Cleveland OH
 
@@ -22,6 +24,8 @@ I am a full-stack software engineer & web developer. I wasn't always. Here's how
 - Member of the core scheduling product team.
 - Modernized an older Python codebase through new features, improved UI, automated testing, new tooling, & constant refactoring.
 
+I started at OnShift as a junior developer, learning Python from scratch along with how an agile dev shop operates. I was lucky to be surrounded by talented developers who were gracious with mentoring, and this ended up being a great place for a junior dev to learn the ropes. I was promoted to a mid-level dev after about a year.
+
 ### Rochester Lumber Company, Vice President, Operations // Rochester, NY
 
 `10/2009 => 02/2016`
@@ -29,6 +33,8 @@ I am a full-stack software engineer & web developer. I wasn't always. Here's how
 - Directed daily and long-term strategy for company operations & IT.
 - Supervised 4 branch managers toward goals of improved performance, profitability, & better team communication.
 - Served as Retail Branch Manager, IT Manager, & Counter Sales during tenure.
+
+I worked at my family's lumber business for 6-1/2 years. I had worked there over summers since I was about 14, but starting in 2009 this was going to be my career. I started as counter sales, answering phones and handling customers at point of sale. From here, I initiated an IT upgrade, converting our internal systems from AS/400 terminals and the associated processes to Windows machines and an SaaS ERP solution. After that conversion process, I was put into a management role over the counter sales department while maintaining my role as IT manager. After a year or two there, I moved up to be Vice President of Operations with the intent of improving internal processes and making business operations more efficient.
 
 ### Education
 
@@ -44,4 +50,4 @@ I attained a B.S. in Wood Products Engineering from SUNY ESF at Syracuse. When I
 - Terminal: [iTerm2](https://iterm2.com/)
 - Terminal Theme: [NightLion v2](https://github.com/mbadolato/iTerm2-Color-Schemes#nightlion-v2)
 - Coffee: [Rising Star](http://risingstarcoffee.com/)
-- Go-to coding music: [voidgaze](https://open.spotify.com/playlist/1wks5Mj1FjxJLHWbmqx7Qp)
+- Music: [voidgaze](https://open.spotify.com/playlist/1wks5Mj1FjxJLHWbmqx7Qp)
