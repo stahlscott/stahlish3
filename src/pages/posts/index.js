@@ -17,11 +17,13 @@ export default class PostsPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">
                 Posts
-                <span style={{ marginLeft: 20 }}>
-                  <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon className="fa-xs" icon={faRss} />
-                  </a>
-                </span>
+                {posts && (
+                  <span style={{ marginLeft: 20 }}>
+                    <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon className="fa-xs" icon={faRss} />
+                    </a>
+                  </span>
+                )}
               </h1>
             </div>
             {posts.map(({ node: post }) => this.renderBlurb(post))}
