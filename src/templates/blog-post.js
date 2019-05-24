@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
+
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-export const BlogPostTemplate = ({ content, contentComponent, description, tags, title, helmet }) => {
+export const BlogPostTemplate = ({ content, contentComponent, date, description, tags, title, helmet }) => {
   const PostContent = contentComponent || Content;
 
   return (
@@ -16,9 +17,9 @@ export const BlogPostTemplate = ({ content, contentComponent, description, tags,
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
-            <p style={{ 'font-style': 'italic' }}>{description}</p>
+            <p style={{ 'font-style': 'italic' }}>{description ? `${date} // ${description}` : date}</p>
             <PostContent content={content} />
-            {tags && tags.length ? (
+            {tags && tags.length && (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
@@ -29,7 +30,7 @@ export const BlogPostTemplate = ({ content, contentComponent, description, tags,
                   ))}
                 </ul>
               </div>
-            ) : null}
+            )}
           </div>
         </div>
       </div>
@@ -53,9 +54,10 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
+        date={post.frontmatter.date}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | stahlish.com">
             <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
           </Helmet>
