@@ -43,6 +43,9 @@
     "typography-theme-noriega": "^0.16.18",
     "uuid": "^3.2.1"
   },
+  "resolutions": {
+    "caniuse-lite": "1.0.30000957"
+  },
   "keywords": [
     "gatsby"
   ],
