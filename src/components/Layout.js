@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 import './all.sass';
 
 ReactGA.initialize('UA-75783400-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+window && ReactGA.pageview(window.location.pathname + window.location.search);
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
