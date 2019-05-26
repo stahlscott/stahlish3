@@ -1,9 +1,13 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Navbar from '../components/Navbar';
 import './all.sass';
+
+ReactGA.initialize('UA-75783400-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -35,14 +39,6 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75783400-1"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-75783400-1');
-          </script>
         </Helmet>
         <Navbar />
         <div>{children}</div>
