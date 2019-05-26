@@ -35,15 +35,14 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75783400-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75783400-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-              gtag('config', 'UA-75783400-1');
-            </script>
+            gtag('config', 'UA-75783400-1');
+          </script>
         </Helmet>
         <Navbar />
         <div>{children}</div>
