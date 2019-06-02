@@ -4,6 +4,7 @@ title: 'CodeMash 2018 retrospective'
 date: 2018-01-13T09:08:11-05:00
 tags:
   - conference
+  - project
   - react
 published: true
 ---

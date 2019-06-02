@@ -4,8 +4,9 @@ title: 'My first conference talk'
 description: 'From Lumberjack to Python Developer - PyOhio 2017'
 date: 2017-08-02
 tags:
-  - pyohio
   - conference
+  - python
+  - pyohio
 published: true
 ---
 

@@ -3,7 +3,9 @@ templateKey: blog-post
 title: 'First Open Source Contribution!'
 date: 2018-03-10
 tags:
+  - project
   - open-source
+  - python
   - sqlobject
 published: true
 ---
