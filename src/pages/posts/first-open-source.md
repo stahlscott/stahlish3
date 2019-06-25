@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'First Open Source Contribution!'
+description: '... into the bowels of an ancient Python ORM'
 date: 2018-03-10
 tags:
   - project
@@ -12,7 +13,9 @@ published: true
 
 We had a weird problem come up at work. We stream customer data from our main product to our new product in order to keep the data separate but consistent. It seems as though the process by which we were streaming that data was sometimes sending bad objects and was doing so repeatedly. As we dug into it, it seems that we were triggering the data to be shipped on created/updated/destroyed row hooks inside transaction blocks in the ORM, but in some cases we were rolling back those transaction blocks even though the data had been shipped.
 
-It was decided that to fix the issue without rewriting everything, we would add a signal on commit and on rollback. We would then buffer the incoming data being sent from the update/delete blocks and only release the info once we received a commit signal with matching models and object ids. We use [SQLObject](https://github.com/sqlobject/sqlobject), which is a slightly obscure Python ORM, and we forked it approximately 5 years and 2 major versions ago. I started by looking at the current version of the project, which is still being maintained, to see if they had already implemented what we were looking for. On the contrary, I found that the commit & rollback methods had remained exactly the same since 2004. It ended up being a relatively straightforward fix once the problem was understood, so I made the change, wrote a test to cover it, and pushed it to our local fork. Once we implemented the buffer service in our main codebase, everything seemed to be working well.
+It was decided that to fix the issue without rewriting everything, we would add a signal on commit and on rollback. We would then buffer the incoming data being sent from the update/delete blocks and only release the info once we received a commit signal with matching models and object ids. This change would also bring with the benefit of greatly reducing the data we were pushing through; the update hooks created by the ORM were triggering queries essentially for each field that was updated. If you updated 10 fields on a user, this was 10 individual queries that were pushed across the sync service to the new product. By only pushing changes on commit and rollback, that buffering would cut our data transfer by about 90%.
+
+We use [SQLObject](https://github.com/sqlobject/sqlobject), which is an obscure Python ORM, and we forked it approximately 5 years and 2 major versions ago. I started by looking at the current version of the project, which is still being maintained, to see if they had already implemented what we were looking for. On the contrary, I found that the commit & rollback methods had remained exactly the same since 2004. It ended up being a relatively straightforward fix once the problem was understood, so I made the change, wrote a test to cover it, and pushed it to our local fork. Once we implemented the buffer service in our main codebase, everything seemed to be working well.
 
 (p.s. docker-compose made it easy to redirect a dependency to a local folder, which was invaluable at figuring out how to make this work)
 
