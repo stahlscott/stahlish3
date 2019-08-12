@@ -6,9 +6,25 @@ image: /img/wave.png
 
 I am a full-stack software engineer & web developer. I wasn't always. Here's how I got here.
 
+### StyleSeat, Software Engineer // HQ in San Francisco, Full-time Remote @ Cleveland, OH
+
+`07/2019 => Present`
+
+- Building the StyleSeat platform
+- Working with React, Angular, Python, Docker.
+
+<details>
+<summary>More...</summary>
+<p>
+
+StyleSeat's mission is to help people look and feel their best. We're building a platform to connect clients with the best beauty service providers in their area.
+
+</p>
+</details>
+
 ### Skiplist, Software Developer // Cleveland OH, Full-time Remote
 
-`05/2018 => present`
+`05/2018 => 07/2019`
 
 - Contracting/consulting, writing web & mobile applications.
 - Developing in React, React-Native, Node, Python, Mongo, & more.

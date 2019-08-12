@@ -2,7 +2,7 @@
 home: true
 templateKey: about-page
 title: Scott Stahl
-image: /img/coffeeshopsquare.png
+image: /img/comic.png
 ---
 
 Full-stack software engineer & web developer.

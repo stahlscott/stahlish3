@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 
 const Avatar = ({ imageInfo }) => {
   const imageStyle = { borderRadius: '20px', width: '80px' };
+  if (!imageInfo) return null;
   const { alt = '', childImageSharp, image } = imageInfo;
 
   if (!!image && !!image.childImageSharp) {
