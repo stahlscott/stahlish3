@@ -6,7 +6,7 @@ image: /img/wave.png
 
 I am a full-stack software engineer & web developer. I wasn't always. Here's how I got here.
 
-### StyleSeat, Software Engineer // HQ in San Francisco, Full-time Remote @ Cleveland, OH
+### StyleSeat, Team Lead & Senior SE // Full-time Remote @ Cleveland, OH
 
 `07/2019 => Present`
 
